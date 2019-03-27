@@ -1,6 +1,6 @@
 # Norobots
 
-Block Bots from scraping your website.
+Block Bots from accessing your website.
 
 ## Installation
 
