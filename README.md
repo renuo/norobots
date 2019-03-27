@@ -1,5 +1,6 @@
 # Norobots
 
+[![Gem Version](https://badge.fury.io/rb/norobots.svg)](https://badge.fury.io/rb/norobots)
 [![Build Status](https://travis-ci.org/renuo/norobots.svg?branch=master)](https://travis-ci.org/renuo/norobots)
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f0d93fa0d0aecc83797/maintainability)](https://codeclimate.com/github/renuo/norobots/maintainability)
 
