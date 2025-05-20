@@ -25,7 +25,7 @@ module Norobots
         request_host = env["HTTP_HOST"]
         canonical_host = ENV["CANONICAL_HOST"]
         if request_host == canonical_host
-          "User-Agent: *\nAllow: /\nHost: #{canonical_host}"
+          @app.call(env)[2].first
         else
           "User-Agent: *\nDisallow: /"
         end

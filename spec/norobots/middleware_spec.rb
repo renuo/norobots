@@ -49,9 +49,9 @@ RSpec.describe Norobots::Middleware do
     context "when request is from canonical host" do
       let(:env_args) { default_env_args.merge("HTTP_HOST" => canonical_host) }
 
-      it "allows crawling" do
-        expect(subject).to eq ["User-Agent: *\nAllow: /\nHost: #{canonical_host}"]
-        expect(app).not_to have_received :call
+      it "uses the original robots.txt" do
+        expect(subject).to eq ["Original request"]
+        expect(app).to have_received :call
       end
     end
 

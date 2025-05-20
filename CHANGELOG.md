@@ -5,10 +5,11 @@
 ### Additions
 
 - Added support for domain-based robots.txt configuration using `CANONICAL_HOST` environment variable.
-- Added ability to allow crawling on canonical domain while blocking others.
+- Added ability to use original robots.txt for canonical domain while blocking others.
 
 ### Changes
 
+- Made `BLOCK_ROBOTS` and `CANONICAL_HOST` environment variables mutually exclusive.
 - Updated README with new configuration options and examples.
 
 ## 0.2.0

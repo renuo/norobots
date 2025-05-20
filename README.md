@@ -37,7 +37,7 @@ If you use Rails the middleware is loaded automatically.
    - All domains will be blocked (Disallow: /)
 
 3. Only `CANONICAL_HOST` set:
-   - The canonical domain will be crawlable (Allow: /)
+   - The canonical domain will use the original `robots.txt` from your public folder
    - All other domains will be blocked (Disallow: /)
 
 Example:
@@ -48,10 +48,10 @@ Example:
 ENV['BLOCK_ROBOTS'] = 'true'
 # Result: All domains will be blocked
 
-# Option 2: Allow only canonical domain
+# Option 2: Allow only canonical domain to use original robots.txt
 ENV['CANONICAL_HOST'] = 'example.com'
 # Result:
-# - example.com/robots.txt -> Allows crawling
+# - example.com/robots.txt -> Uses your original robots.txt
 # - staging.example.com/robots.txt -> Blocks crawling
 # - any-other-domain.com/robots.txt -> Blocks crawling
 
@@ -62,7 +62,7 @@ ENV['CANONICAL_HOST'] = 'example.com'
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
-Then, run `rake spec` to run the tests.
+Then, run `bin/check` to run the tests.
 You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`.
