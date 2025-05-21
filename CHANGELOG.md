@@ -10,6 +10,7 @@
 ### Changes
 
 - Made `BLOCK_ROBOTS` and `CANONICAL_HOST` environment variables mutually exclusive.
+- Updated Rails integration to insert middleware when either `BLOCK_ROBOTS` or `CANONICAL_HOST` is set.
 - Updated README with new configuration options and examples.
 
 ## 0.2.0
