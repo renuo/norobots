@@ -31,26 +31,6 @@ If you use Rails the middleware is loaded automatically.
 When `BLOCK_ROBOTS` environment variable is not set, the original `robots.txt` file
 in the public folder will be served.
 
-
-Example:
-```ruby
-# In your Rails application
-
-# Option 1: Block all robots
-ENV['BLOCK_ROBOTS'] = 'true'
-# Result: All domains will be blocked
-
-# Option 2: Allow only canonical domain
-ENV['CANONICAL_HOST'] = 'example.com'
-# Result:
-# - example.com/robots.txt -> Allows crawling
-# - staging.example.com/robots.txt -> Blocks crawling
-# - any-other-domain.com/robots.txt -> Blocks crawling
-
-# Option 3: No environment variables
-# Result: Your original robots.txt from public folder is served
-```
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
