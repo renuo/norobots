@@ -24,21 +24,13 @@ Or install it yourself as:
     $ gem install norobots
 
 ## Usage
-The middleware can be configured using environment variables. You can use either `BLOCK_ROBOTS` or `CANONICAL_HOST`, but not both.
+Set `BLOCK_ROBOTS` environment variable and you are good to go! Any value is fine, as long as is defined.
 
 If you use Rails the middleware is loaded automatically.
 
-### Configuration Options
+When `BLOCK_ROBOTS` environment variable is not set, the original `robots.txt` file
+in the public folder will be served.
 
-1. No environment variables set:
-   - The original `robots.txt` file from your public folder will be served
-
-2. Only `BLOCK_ROBOTS` set:
-   - All domains will be blocked (Disallow: /)
-
-3. Only `CANONICAL_HOST` set:
-   - The canonical domain will be crawlable (Allow: /)
-   - All other domains will be blocked (Disallow: /)
 
 Example:
 ```ruby
