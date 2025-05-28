@@ -31,6 +31,7 @@ If you use Rails the middleware is loaded automatically.
 When `BLOCK_ROBOTS` environment variable is not set, the original `robots.txt` file
 in the public folder will be served.
 
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
