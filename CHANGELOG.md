@@ -1,5 +1,16 @@
 # Changelog
 
+##0.2.1
+
+### Additions
+
+- Add standardrb for development environment
+
+### Removals
+
+- Drop rubocop dependency for development environment
+
+
 ## 0.2.0
 
 ### Additions
