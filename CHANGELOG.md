@@ -1,5 +1,11 @@
 # Changelog
 
+##0.2.4
+
+### Changes
+
+- Linting changes
+
 ##0.2.3
 
 ### Changes
