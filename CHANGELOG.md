@@ -1,5 +1,11 @@
 # Changelog
 
+##0.2.3
+
+### Changes
+
+- Remove license year
+
 ##0.2.2
 
 ### Changes
