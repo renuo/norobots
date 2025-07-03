@@ -1,5 +1,11 @@
 # Changelog
 
+##0.2.2
+
+### Changes
+
+- Update gemfile
+
 ##0.2.1
 
 ### Additions
