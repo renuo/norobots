@@ -7,8 +7,8 @@ module Norobots
     end
 
     def call(env)
-      if env['PATH_INFO'] == '/robots.txt' && !ENV['BLOCK_ROBOTS'].nil?
-        [200, { 'Content-Type' => 'text/plain' }, ["User-Agent: *\nDisallow: /"]]
+      if env["PATH_INFO"] == "/robots.txt" && !ENV["BLOCK_ROBOTS"].nil?
+        [200, {"Content-Type" => "text/plain"}, ["User-Agent: *\nDisallow: /"]]
       else
         @app.call(env)
       end
