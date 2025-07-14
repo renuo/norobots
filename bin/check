@@ -2,5 +2,5 @@
 
 set -e
 
-bundle exec standardrb -D
-bundle exec rake spec
+bundle exec standardrb
+bundle exec rspec
