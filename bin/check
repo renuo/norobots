@@ -2,5 +2,5 @@
 
 set -e
 
-bundle exec standardrb -D
+bundle exec standardrb
 bundle exec rspec
